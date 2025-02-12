@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thành viên - Kiti Cinema</title>
+    <link rel="stylesheet" href="../css/member.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-left">
+            <a href="../index.html"><span>Kiti </span>Cinema</a>
+            <a href="movie.html">Phim</a>
+            <a href="rap.html">Rạp</a>
+            <a href="ticket-prices.html">Giá vé</a>
+            <a href="member.html">Thành viên</a>
+        </div>
+        <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+    </div>
+    <div class="content">
+        <div class="section">
+            <h2>Thành viên</h2>
+            <div id="member-section">
+                <div class="toggle-buttons">
+                    <button id="show-login">Đăng nhập</button>
+                    <button id="show-register">Đăng ký</button>
+                </div>
+                <div id="login-section" class="form-section active">
+                    <h3>Đăng nhập</h3>
+                    <form id="login-form">
+                        <label for="login-username">Username:</label>
+                        <input type="text" id="login-username" name="username" required>
+                        <label for="login-password">Password:</label>
+                        <input type="password" id="login-password" name="password" required>
+                        <button type="submit">Đăng nhập</button>
+                    </form>
+                </div>
+                <div id="register-section" class="form-section">
+                    <h3>Đăng ký</h3>
+                    <form id="register-form">
+                        <label for="register-username">Username:</label>
+                        <input type="text" id="register-username" name="username" required>
+                        <label for="register-password">Password:</label>
+                        <input type="password" id="register-password" name="password" required>
+                        <label for="confirm-password">Confirm Password:</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
+                <button id="logout-button" style="display: none;">Đăng xuất</button>
+            </div>
+        </div>
+    </div>
+    <script src="../js/member.js"></script>
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 K1ti Cinema. All rights reserved.</p>
+        <p>Contact us: Movies@k1ticinema.com | +84 123 456 789</p>
+        <p>Address: 123 Cinema Street, Nam Dinh, Vietnam</p>
+    </div>
+</footer>
+<script src="../scripts.js"></script>
+</html>

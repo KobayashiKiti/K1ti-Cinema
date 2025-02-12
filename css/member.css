@@ -1,0 +1,202 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+:root {
+    --background-color: #f4f4f4;
+    --text-color: #000;
+    --navbar-background-color: #2c3e50;
+    --navbar-text-color: #ecf0f1;
+    --button-background-color: #2c3e50;
+    --button-text-color: #fff;
+    --button-hover-background-color: #34495e;
+}
+
+body.dark-mode {
+    --background-color: #2c3e50;
+    --text-color: #ecf0f1;
+    --navbar-background-color: #34495e;
+    --navbar-text-color: #ecf0f1;
+    --button-background-color: #ecf0f1;
+    --button-text-color: #2c3e50;
+    --button-hover-background-color: #f4f4f4;
+}
+
+.navbar {
+    background-color: var(--navbar-background-color);
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar a {
+    color: var(--navbar-text-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar span{
+    color:skyblue;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background-color: var(--button-hover-background-color);
+    color: var(--navbar-text-color);
+}
+
+#theme-toggle {
+    padding: 10px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#theme-toggle:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+.content {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+.section {
+    margin-bottom: 40px;
+}
+
+.section h2 {
+    border-bottom: 2px solid var(--navbar-background-color);
+    padding-bottom: 10px;
+    color: var(--navbar-background-color);
+}
+
+#member-section {
+    margin-top: 20px;
+}
+
+.toggle-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.toggle-buttons button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+    width: 100%;
+    text-align: left;
+}
+
+form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+#logout-button {
+    padding: 10px 20px;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#logout-button:hover {
+    background-color: var(--button-hover-background-color);
+}
+form select,
+form button {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--button-hover-background-color);
+}
+
+.footer-content {
+    background-color: var(--navbar-background-color);
+    color: var(--navbar-text-color);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content p {
+    margin: 5px 0;
+}
